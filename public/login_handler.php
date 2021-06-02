@@ -5,6 +5,10 @@
  * Manejar la respuesta del servidor al iniciar sesión.
  */
 // Cargar liberías
+
+use Francerz\Http\HttpFactory;
+use Francerz\Http\Server;
+use Francerz\Http\Utils\HttpHelper;
 use ITColima\Siitec2\Api\Siitec2Api;
 
 // Inicializar entorno de la aplicación.
@@ -20,5 +24,7 @@ $api = new Siitec2Api();
 $api->handleLogin();
 
 // Una vez concluído el inicio de sesión, redirigir a principal.php
-http_response_code(307);
-header('Location:'.$api->getRedir($_ENV['BASE_URL'].'/index.php'));
+$http = HttpFactory::getHelper();
+$response = $http->makeRedirect($api->getRedir($_ENV['BASE_URL'].'/index.php'));
+
+Server::new()->emitResponse($response);

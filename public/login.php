@@ -4,6 +4,11 @@
  * Establecer la URI como manejadora del inicio de sesión.
  */
 // Cargar liberías
+
+use Francerz\Http\HttpFactory;
+use Francerz\Http\Server;
+use Francerz\Http\Utils\HttpHelper;
+use ITColima\Siitec2\Api\Scopes;
 use ITColima\Siitec2\Api\Siitec2Api;
 
 // Inicializar entorno de la aplicación.
@@ -15,16 +20,20 @@ session_start();
 // Inicializar instancia de API
 $api = new Siitec2Api();
 
+$http = HttpFactory::getHelper();
+
 // Verificar si hay sesión iniciada, si es así redirigir a donde señale el
 // parámetro `redir` de la URL o a "index.php"
-if ($api->getPerfil()) {
-    http_response_code(307);
-    header('Location:'.$api->getRedir($_ENV['BASE_URL'].'/index.php'));
+if ($api->isLoggedIn()) {
+    $response = $http->makeRedirect($api->getRedir($_ENV['BASE_URL'].'/index.php'));
+    Server::new()->emitResponse($response);
     return;
 }
 
 // Estableceer URL donde se recibirá el inicio de sesión de SIITEC 2
-$api->setLoginHandlerUri($_ENV['BASE_URL'].'/login_handler.php');
-
-// Realizar inicio de sesión con $scopes y $csrfKey opcionales.
-$api->performLogin();
+$loginHandlerUri = $_ENV['BASE_URL'].'/login_handler.php';
+$logoutUri = $_ENV['BASE_URL'].'/logout.php';
+$scopes = [Scopes::GET_USUARIO_PERFIL_OWN];
+$csrfKey = '';
+$response = $api->login($loginHandlerUri, $logoutUri, $scopes, $csrfKey);
+Server::new()->emitResponse($response);

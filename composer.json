@@ -3,7 +3,7 @@
     "description": "Demostraci\u0000n de la API de SIITEC 2",
     "type": "project",
     "require": {
-        "itcolima/siitec2-api-client": "^0.1.3",
+        "itcolima/siitec2-api-client": "^0.1",
         "vlucas/phpdotenv": "^5.3"
     },
     "license": "ISC",
