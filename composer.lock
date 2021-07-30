@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7844499176c41fc57024942fbdab58db",
+    "content-hash": "9f29a23cddef86d8281f39dfb47714f5",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -64,16 +64,16 @@
         },
         {
             "name": "francerz/api-client",
-            "version": "v0.2.4",
+            "version": "v0.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-api-client.git",
-                "reference": "e49b8f2a708f1abadd8e06b71d11089550d88594"
+                "reference": "c6c2663b0273a86e5db2a98174c901b61c7f3ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-api-client/zipball/e49b8f2a708f1abadd8e06b71d11089550d88594",
-                "reference": "e49b8f2a708f1abadd8e06b71d11089550d88594",
+                "url": "https://api.github.com/repos/francerz/php-api-client/zipball/c6c2663b0273a86e5db2a98174c901b61c7f3ac6",
+                "reference": "c6c2663b0273a86e5db2a98174c901b61c7f3ac6",
                 "shasum": ""
             },
             "require": {
@@ -98,9 +98,9 @@
             "description": "PHP Generic API Client",
             "support": {
                 "issues": "https://github.com/francerz/php-api-client/issues",
-                "source": "https://github.com/francerz/php-api-client/tree/v0.2.4"
+                "source": "https://github.com/francerz/php-api-client/tree/v0.2.5"
             },
-            "time": "2021-06-02T01:50:40+00:00"
+            "time": "2021-07-30T15:26:44+00:00"
         },
         {
             "name": "francerz/http",
@@ -143,16 +143,16 @@
         },
         {
             "name": "francerz/http-utils",
-            "version": "v0.2.32",
+            "version": "v0.2.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-http-utils.git",
-                "reference": "e9f5040d1b141ae6a56780935f244d6e61d82485"
+                "reference": "0da7883a3aece3428f1cfee82f677d61cfe7bd32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-http-utils/zipball/e9f5040d1b141ae6a56780935f244d6e61d82485",
-                "reference": "e9f5040d1b141ae6a56780935f244d6e61d82485",
+                "url": "https://api.github.com/repos/francerz/php-http-utils/zipball/0da7883a3aece3428f1cfee82f677d61cfe7bd32",
+                "reference": "0da7883a3aece3428f1cfee82f677d61cfe7bd32",
                 "shasum": ""
             },
             "require": {
@@ -192,9 +192,9 @@
             ],
             "support": {
                 "issues": "https://github.com/francerz/php-http-utils/issues",
-                "source": "https://github.com/francerz/php-http-utils/tree/v0.2.32"
+                "source": "https://github.com/francerz/php-http-utils/tree/v0.2.41"
             },
-            "time": "2021-06-01T18:06:56+00:00"
+            "time": "2021-07-11T23:17:42+00:00"
         },
         {
             "name": "francerz/oauth2-client",
@@ -286,16 +286,16 @@
         },
         {
             "name": "francerz/php-power-data",
-            "version": "v0.1.15",
+            "version": "v0.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-power-data.git",
-                "reference": "3a272b57624c23ef0d94f3f117416579c6fecade"
+                "reference": "c6e23aae1d74daa31e8e3d871c93ff4a2fc87380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-power-data/zipball/3a272b57624c23ef0d94f3f117416579c6fecade",
-                "reference": "3a272b57624c23ef0d94f3f117416579c6fecade",
+                "url": "https://api.github.com/repos/francerz/php-power-data/zipball/c6e23aae1d74daa31e8e3d871c93ff4a2fc87380",
+                "reference": "c6e23aae1d74daa31e8e3d871c93ff4a2fc87380",
                 "shasum": ""
             },
             "require-dev": {
@@ -310,15 +310,15 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Fran CZ"
+                    "name": "Francisco CZ"
                 }
             ],
             "description": "PHP data structures for complex data handling",
             "support": {
                 "issues": "https://github.com/francerz/php-power-data/issues",
-                "source": "https://github.com/francerz/php-power-data/tree/v0.1.15"
+                "source": "https://github.com/francerz/php-power-data/tree/v0.1.18"
             },
-            "time": "2021-04-19T18:26:24+00:00"
+            "time": "2021-06-28T19:49:56+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -387,17 +387,17 @@
             "time": "2020-04-13T13:17:36+00:00"
         },
         {
-            "name": "itcolima/siitec2-api-client",
-            "version": "v0.1.24",
+            "name": "itcolima/siitec-api-client",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tecnm-colima/siitec2-api-client.git",
-                "reference": "69acdf7e7d090bce580d90eee2210b47f068c02b"
+                "url": "https://github.com/tecnm-colima/siitec-api-client.git",
+                "reference": "3dd7830e8f0be2b91525079f1466c963d39a2745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-colima/siitec2-api-client/zipball/69acdf7e7d090bce580d90eee2210b47f068c02b",
-                "reference": "69acdf7e7d090bce580d90eee2210b47f068c02b",
+                "url": "https://api.github.com/repos/tecnm-colima/siitec-api-client/zipball/3dd7830e8f0be2b91525079f1466c963d39a2745",
+                "reference": "3dd7830e8f0be2b91525079f1466c963d39a2745",
                 "shasum": ""
             },
             "require": {
@@ -412,16 +412,16 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ITColima\\Siitec2\\Api\\": "src"
+                    "ITColima\\SiitecApi\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "description": "PHP ITColima SIITEC 2 API Client",
+            "description": "PHP ITColima SIITEC API Client",
             "support": {
-                "issues": "https://github.com/tecnm-colima/siitec2-api-client/issues",
-                "source": "https://github.com/tecnm-colima/siitec2-api-client/tree/v0.1.24"
+                "issues": "https://github.com/tecnm-colima/siitec-api-client/issues",
+                "source": "https://github.com/tecnm-colima/siitec-api-client/tree/v0.1.7"
             },
-            "time": "2021-06-02T12:14:28+00:00"
+            "time": "2021-07-30T17:46:10+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -733,16 +733,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1"
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -809,20 +809,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:27:20+00:00"
+            "time": "2021-05-27T12:26:48+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
                 "shasum": ""
             },
             "require": {
@@ -876,7 +876,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -892,7 +892,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-07-28T13:41:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

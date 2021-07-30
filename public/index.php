@@ -4,27 +4,24 @@
  * Muestra un menú de opciones, además de incluir el nombre de usuario identificado.
  */
 // Cargar librería
-use ITColima\Siitec2\Api\Siitec2Api;
+use ITColima\SiitecApi\SiitecApi;
 
 // Inicializar entorno de la aplicación.
 require_once dirname(__DIR__).'/bootstrap.php';
 
-// Para un correcto funcionamiento de la API se requiere utilizar sesiones.
-session_start();
-
 // Inicializar instancia de la API.
-$api = new Siitec2Api();
+$siitecApi = new SiitecApi();
 ?>
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demostración API de SIITEC 2</title>
+    <title>Demostración API de SIITEC</title>
 </head>
 <body>
-    <h1>Demostración de API de SIITEC 2</h1>
-    <?php if ($perfil = $api->getPerfil()): ?>
+    <h1>Demostración de API de SIITEC</h1>
+    <?php if ($perfil = $siitecApi->getPerfil()): ?>
     <p>Identificado como: <strong><?=$perfil->usuario?></strong></p>
     <?php else: ?>
     <p>Identificado como: <strong>Nadie</strong></p>
