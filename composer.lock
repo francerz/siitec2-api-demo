@@ -63,57 +63,57 @@
             "time": "2020-11-24T22:02:12+00:00"
         },
         {
-            "name": "francerz/api-client",
-            "version": "v0.2.5",
+            "name": "francerz/enum",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/francerz/php-api-client.git",
-                "reference": "c6c2663b0273a86e5db2a98174c901b61c7f3ac6"
+                "url": "https://github.com/francerz/php-enum.git",
+                "reference": "02ccd3dc0b2aebd94db0e297430c8a71d5acba8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-api-client/zipball/c6c2663b0273a86e5db2a98174c901b61c7f3ac6",
-                "reference": "c6c2663b0273a86e5db2a98174c901b61c7f3ac6",
+                "url": "https://api.github.com/repos/francerz/php-enum/zipball/02ccd3dc0b2aebd94db0e297430c8a71d5acba8b",
+                "reference": "02ccd3dc0b2aebd94db0e297430c8a71d5acba8b",
                 "shasum": ""
             },
-            "require": {
-                "francerz/http-utils": "^0.2.14",
-                "francerz/oauth2-client": "^0.2.5",
-                "francerz/php-power-data": "^0.1.3",
-                "psr/http-client": "^1.0"
-            },
             "require-dev": {
-                "phpunit/phpunit": "^8.5"
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Francerz\\ApiClient\\": "src"
+                    "Francerz\\Enum\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "PHP Generic API Client",
+            "authors": [
+                {
+                    "name": "Francerz",
+                    "email": "francerzam@hotmail.com"
+                }
+            ],
+            "description": "PHP Enumeration tool",
             "support": {
-                "issues": "https://github.com/francerz/php-api-client/issues",
-                "source": "https://github.com/francerz/php-api-client/tree/v0.2.5"
+                "issues": "https://github.com/francerz/php-enum/issues",
+                "source": "https://github.com/francerz/php-enum/tree/v0.1.1"
             },
-            "time": "2021-07-30T15:26:44+00:00"
+            "time": "2021-10-18T14:08:19+00:00"
         },
         {
             "name": "francerz/http",
-            "version": "v0.3.2",
+            "version": "v0.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-http.git",
-                "reference": "fa674194df96f3a2d8d555dbeed32aac75c19671"
+                "reference": "6e57b00ee87322dc58d9d98f7a4e66dbfa6c6b40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-http/zipball/fa674194df96f3a2d8d555dbeed32aac75c19671",
-                "reference": "fa674194df96f3a2d8d555dbeed32aac75c19671",
+                "url": "https://api.github.com/repos/francerz/php-http/zipball/6e57b00ee87322dc58d9d98f7a4e66dbfa6c6b40",
+                "reference": "6e57b00ee87322dc58d9d98f7a4e66dbfa6c6b40",
                 "shasum": ""
             },
             "require": {
@@ -137,22 +137,22 @@
             "description": "Basic HTTP client",
             "support": {
                 "issues": "https://github.com/francerz/php-http/issues",
-                "source": "https://github.com/francerz/php-http/tree/v0.3.2"
+                "source": "https://github.com/francerz/php-http/tree/v0.3.13"
             },
-            "time": "2021-06-02T14:25:02+00:00"
+            "time": "2022-02-17T15:59:06+00:00"
         },
         {
             "name": "francerz/http-utils",
-            "version": "v0.2.41",
+            "version": "v0.2.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-http-utils.git",
-                "reference": "0da7883a3aece3428f1cfee82f677d61cfe7bd32"
+                "reference": "e9af055bf2d6ada791ec620565322b56b85df505"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-http-utils/zipball/0da7883a3aece3428f1cfee82f677d61cfe7bd32",
-                "reference": "0da7883a3aece3428f1cfee82f677d61cfe7bd32",
+                "url": "https://api.github.com/repos/francerz/php-http-utils/zipball/e9af055bf2d6ada791ec620565322b56b85df505",
+                "reference": "e9af055bf2d6ada791ec620565322b56b85df505",
                 "shasum": ""
             },
             "require": {
@@ -165,6 +165,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
                 "psr-4": {
                     "Francerz\\Http\\Utils\\": "src/utils",
                     "Francerz\\Http\\Utils\\Headers\\": "src/headers",
@@ -192,26 +195,26 @@
             ],
             "support": {
                 "issues": "https://github.com/francerz/php-http-utils/issues",
-                "source": "https://github.com/francerz/php-http-utils/tree/v0.2.41"
+                "source": "https://github.com/francerz/php-http-utils/tree/v0.2.47"
             },
-            "time": "2021-07-11T23:17:42+00:00"
+            "time": "2022-05-08T18:55:26+00:00"
         },
         {
             "name": "francerz/oauth2-client",
-            "version": "v0.2.9",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-oauth2-client.git",
-                "reference": "f4cbbec9d6e8b905ffee701f5443d4a1e02e6779"
+                "reference": "521e412e4292d1cceffbc661c1d4f1b87c7977c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-oauth2-client/zipball/f4cbbec9d6e8b905ffee701f5443d4a1e02e6779",
-                "reference": "f4cbbec9d6e8b905ffee701f5443d4a1e02e6779",
+                "url": "https://api.github.com/repos/francerz/php-oauth2-client/zipball/521e412e4292d1cceffbc661c1d4f1b87c7977c5",
+                "reference": "521e412e4292d1cceffbc661c1d4f1b87c7977c5",
                 "shasum": ""
             },
             "require": {
-                "francerz/oauth2-core": "^0.2",
+                "francerz/oauth2-core": "^0.3",
                 "francerz/php-power-data": "^0.1.0",
                 "psr/http-client": "^1.0",
                 "psr/http-message": "^1.0"
@@ -237,30 +240,31 @@
             ],
             "support": {
                 "issues": "https://github.com/francerz/php-oauth2-client/issues",
-                "source": "https://github.com/francerz/php-oauth2-client/tree/v0.2.9"
+                "source": "https://github.com/francerz/php-oauth2-client/tree/v0.3.1"
             },
-            "time": "2021-06-02T01:26:20+00:00"
+            "time": "2022-02-17T19:55:08+00:00"
         },
         {
             "name": "francerz/oauth2-core",
-            "version": "v0.2.11",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-oauth2-core.git",
-                "reference": "8ba1c5c8955bf88a4329ca84ac5b93eac5cdff92"
+                "reference": "9df29bed4f14bd45788dc068ef990e9106e7b9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-oauth2-core/zipball/8ba1c5c8955bf88a4329ca84ac5b93eac5cdff92",
-                "reference": "8ba1c5c8955bf88a4329ca84ac5b93eac5cdff92",
+                "url": "https://api.github.com/repos/francerz/php-oauth2-core/zipball/9df29bed4f14bd45788dc068ef990e9106e7b9be",
+                "reference": "9df29bed4f14bd45788dc068ef990e9106e7b9be",
                 "shasum": ""
             },
             "require": {
-                "francerz/http": "^0.3.0",
-                "francerz/http-utils": "^0.2.9",
+                "francerz/enum": "^0.1.1",
+                "francerz/http-utils": "^0.2",
                 "psr/http-message": "^1.0"
             },
             "require-dev": {
+                "francerz/http": "^0.3.10",
                 "phpunit/phpunit": "^8.5"
             },
             "type": "library",
@@ -280,22 +284,22 @@
             ],
             "support": {
                 "issues": "https://github.com/francerz/php-oauth2-core/issues",
-                "source": "https://github.com/francerz/php-oauth2-core/tree/v0.2.11"
+                "source": "https://github.com/francerz/php-oauth2-core/tree/v0.3.3"
             },
-            "time": "2021-06-01T17:41:39+00:00"
+            "time": "2022-01-18T17:27:11+00:00"
         },
         {
             "name": "francerz/php-power-data",
-            "version": "v0.1.18",
+            "version": "v0.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-power-data.git",
-                "reference": "c6e23aae1d74daa31e8e3d871c93ff4a2fc87380"
+                "reference": "2f57c45f4141ab1fe2f3cd4bf648bf4a9e602787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-power-data/zipball/c6e23aae1d74daa31e8e3d871c93ff4a2fc87380",
-                "reference": "c6e23aae1d74daa31e8e3d871c93ff4a2fc87380",
+                "url": "https://api.github.com/repos/francerz/php-power-data/zipball/2f57c45f4141ab1fe2f3cd4bf648bf4a9e602787",
+                "reference": "2f57c45f4141ab1fe2f3cd4bf648bf4a9e602787",
                 "shasum": ""
             },
             "require-dev": {
@@ -316,37 +320,32 @@
             "description": "PHP data structures for complex data handling",
             "support": {
                 "issues": "https://github.com/francerz/php-power-data/issues",
-                "source": "https://github.com/francerz/php-power-data/tree/v0.1.18"
+                "source": "https://github.com/francerz/php-power-data/tree/v0.1.25"
             },
-            "time": "2021-06-28T19:49:56+00:00"
+            "time": "2021-10-13T14:00:45+00:00"
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.0.1",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb"
+                "reference": "0690bde05318336c7221785f2a932467f98b64ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/7e279d2cd5d7fbb156ce46daada972355cea27bb",
-                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/0690bde05318336c7221785f2a932467f98b64ca",
+                "reference": "0690bde05318336c7221785f2a932467f98b64ca",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0|^8.0",
-                "phpoption/phpoption": "^1.7.3"
+                "php": "^7.0 || ^8.0",
+                "phpoption/phpoption": "^1.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5|^7.5|^8.5|^9.0"
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.19 || ^9.5.8"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "GrahamCampbell\\ResultType\\": "src/"
@@ -359,7 +358,8 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 }
             ],
             "description": "An Implementation Of The Result Type",
@@ -372,7 +372,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.1"
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.4"
             },
             "funding": [
                 {
@@ -384,26 +384,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-13T13:17:36+00:00"
+            "time": "2021-11-21T21:41:47+00:00"
         },
         {
             "name": "itcolima/siitec-api-client",
-            "version": "v0.1.7",
+            "version": "v0.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnm-colima/siitec-api-client.git",
-                "reference": "3dd7830e8f0be2b91525079f1466c963d39a2745"
+                "reference": "b674a6f00555895999c25edc847086dcfda3ed99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-colima/siitec-api-client/zipball/3dd7830e8f0be2b91525079f1466c963d39a2745",
-                "reference": "3dd7830e8f0be2b91525079f1466c963d39a2745",
+                "url": "https://api.github.com/repos/tecnm-colima/siitec-api-client/zipball/b674a6f00555895999c25edc847086dcfda3ed99",
+                "reference": "b674a6f00555895999c25edc847086dcfda3ed99",
                 "shasum": ""
             },
             "require": {
-                "francerz/api-client": "^0.2",
                 "francerz/http": "^0.3",
-                "francerz/oauth2-client": "^0.2",
+                "francerz/oauth2-client": "^0.3",
                 "psr/http-client": "^1.0"
             },
             "require-dev": {
@@ -419,35 +418,35 @@
             "description": "PHP ITColima SIITEC API Client",
             "support": {
                 "issues": "https://github.com/tecnm-colima/siitec-api-client/issues",
-                "source": "https://github.com/tecnm-colima/siitec-api-client/tree/v0.1.7"
+                "source": "https://github.com/tecnm-colima/siitec-api-client/tree/v0.1.42"
             },
-            "time": "2021-07-30T17:46:10+00:00"
+            "time": "2022-05-02T13:25:02+00:00"
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.5",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+                "reference": "eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
-                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15",
+                "reference": "eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0 || ^8.0"
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
-                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.19 || ^9.5.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.8-dev"
                 }
             },
             "autoload": {
@@ -462,11 +461,13 @@
             "authors": [
                 {
                     "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh"
                 },
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 }
             ],
             "description": "Option Type for PHP",
@@ -478,7 +479,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.7.5"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.8.1"
             },
             "funding": [
                 {
@@ -490,7 +491,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-20T17:29:33+00:00"
+            "time": "2021-12-04T23:24:31+00:00"
         },
         {
             "name": "psr/http-client",
@@ -654,20 +655,23 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.23.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce"
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/46cd95797e9df938fdd2b03693b5fca5e64b01ce",
-                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/30885182c981ab175d4d034db0f6f469898070ab",
+                "reference": "30885182c981ab175d4d034db0f6f469898070ab",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -683,12 +687,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -713,7 +717,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -729,24 +733,27 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-10-20T20:35:02+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.23.1",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6"
+                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9174a3d80210dca8daa7f31fec659150bbeabfc6",
-                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0abb51d2f102e00a4eefcf46ba7fec406d245825",
+                "reference": "0abb51d2f102e00a4eefcf46ba7fec406d245825",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -762,12 +769,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -793,7 +800,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -809,20 +816,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T12:26:48+00:00"
+            "time": "2021-11-30T18:21:41+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.23.1",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
-                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4407588e0d3f1f52efb65fbe92babe41f37fe50c",
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
                 "shasum": ""
             },
             "require": {
@@ -839,12 +846,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -876,7 +883,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -892,35 +899,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-28T13:41:28+00:00"
+            "time": "2022-03-04T08:16:47+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.3.0",
+            "version": "v5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "b3eac5c7ac896e52deab4a99068e3f4ab12d9e56"
+                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/b3eac5c7ac896e52deab4a99068e3f4ab12d9e56",
-                "reference": "b3eac5c7ac896e52deab4a99068e3f4ab12d9e56",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.0.1",
+                "graham-campbell/result-type": "^1.0.2",
                 "php": "^7.1.3 || ^8.0",
-                "phpoption/phpoption": "^1.7.4",
-                "symfony/polyfill-ctype": "^1.17",
-                "symfony/polyfill-mbstring": "^1.17",
-                "symfony/polyfill-php80": "^1.17"
+                "phpoption/phpoption": "^1.8",
+                "symfony/polyfill-ctype": "^1.23",
+                "symfony/polyfill-mbstring": "^1.23.1",
+                "symfony/polyfill-php80": "^1.23.1"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.14 || ^9.5.1"
+                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
@@ -928,7 +935,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.3-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
@@ -943,13 +950,13 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "homepage": "https://gjcampbell.co.uk/"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 },
                 {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "https://vancelucas.com/"
+                    "homepage": "https://github.com/vlucas"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -960,7 +967,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.3.0"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
             },
             "funding": [
                 {
@@ -972,7 +979,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-20T15:23:13+00:00"
+            "time": "2021-12-12T23:22:04+00:00"
         }
     ],
     "packages-dev": [],
@@ -983,8 +990,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.2.24"
-    },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }

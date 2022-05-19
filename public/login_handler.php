@@ -1,5 +1,6 @@
-
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 /**
  * Archivo: public/login_handler.php
  * Manejar la respuesta del servidor al iniciar sesión.
